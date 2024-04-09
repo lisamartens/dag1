@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Tag Styling */
+        p {
+            color: green;}
+        /* Class Styling */
+        .template1{
+            background-color: dodgerblue;
+            font-size:150%; /*of in pixels, 20px */
+        }
+
+        /*ID styling */
+        #image1{
+            border: 12px solid yellow;
+            width: 300px'
+        }
+    </style>
+    <script>
+        //Javascript comment voor 1 regel
+        /* 
+           Javascript comment voor meerdere regels
+        */
+       let a =6;            //number, int
+       let b = "Tekst";     //string, str
+       let c = true;        //boolean, bool
+
+       const d = 12; //constant mag je eenmalig de waarde instellen, mag niet worden overschreven
+       //d = 34; dit is dus fout
+
+       // Function declaration 
+       function addition(){
+        //Hier kunnen we javascript uitvoeren
+        let invoer1 = document.getElementById("invoer1").value //invoer1 is de id van de invoer die we willen hebben, deze hebben we later bepaald 
+        let totaal = invoer1 + 7;
+        totaal = invoer1 + 3; // totaal +=3
+
+        alert("Totaal is " + totaal); //pop up in pagina
+
+       }
+
+       function addition2(getal1, getal2){
+        let totaal = getal1 + getal2;
+        alert("Uitkomst is " + totaal)
+       }
+       //Function call
+       addition()
+
+       addition2(12, 897)
+    </script>
+
+
+</head>
+<body>
+    <!--Verschillende teksten-->
+    <h1>Mijn website</h1> <!--h1 is de tag-->
+    <h2>Dit is mijn eerste website</h2>
+
+    <!--Paragraaf is een tekst met ruimte er boven en eronder-->
+    <p>dit is mijn eerste paragraph</p>
+    <p>dit is mijn tweede paragraph</p>
+
+    <!--spanwijdte, deze komen achter elkaar-->
+    <span style="color:red;background-color:aqua">Dit is mijn eerste span</span> <!--in line styling, style is hier een attribuut-->
+    <span>Dit is mijn tweede span</span>
+
+    <!--Lijsten-->
+    <!--Unordered list met bullets-->
+    <ul>
+        <li class="template1 template 2">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!--Ordered list met 1. 2. etc-->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <table> <!--Tr is table row, td is table cell -->
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+        </tr>
+    </table>
+
+    <!--Afbeelding-->
+    <img id=1 src="learning.jpeg" width="300">
+
+    <!--begin op een nieuwe regel - break -->
+    <br>
+
+    <!--link ancer tag, als je op klik hier drukt, ga je naar de website-->
+    <a href="http://www.w3schools.com">
+        Klik hier.
+    </a>
+
+    <input type="number" id="invoer1">
+
+    <button type="button" onclick="addition2(23,67)">
+        addition
+    </button>
+
+</body>
+</html>   
